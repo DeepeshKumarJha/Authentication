@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+
+.header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: 900;
+    border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-container{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.email_password_btn {
+    width: 450px;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.email_password_btn:hover .email_password_btn::after {
+    content: '';
+    position: absolute;
+    color: white;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
